@@ -2,8 +2,8 @@ const http = require('http');
 const path = require('path');
 const fs = require('fs');
 const fsPromises = require('fs').promises;
-const {format} = require('date-fns');
-console.log(format(new Date(), 'yyyyMMdd\tHH:mm:ss'))
+//const {format} = require('date-fns');
+//console.log(format(new Date(), 'yyyyMMdd\tHH:mm:ss'))
 
 const logEvents = require('./log_events')
 const EventsEmitter = require('events');
