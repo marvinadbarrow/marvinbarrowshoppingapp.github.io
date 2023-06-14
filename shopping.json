@@ -3,7 +3,7 @@
 
  "category_objects": {   
     
- "fishArr" : [{"categoryName": "fish", "itemName": "crab sticks", "imgAddress": "./images fish/crab sticks.jpg", "id":"crab-sticks"}, {"categoryName": "fish", "itemName": "fish cakes", "imgAddress": "./images fish/fish cakes.jpg", "id":"fish-cakes"}],
+ "fishArr" : [{"categoryName": "fish", "itemName": "crab_sticks", "imgAddress": "./images fish/crab_sticks.jpg", "id":"crab-sticks"}, {"categoryName": "fish", "itemName": "fish_cakes", "imgAddress": "./images fish/fish_cakes.jpg", "id":"fish-cakes"}],
 
 
  "meatArr" : [{"categoryName": "meat", "itemName": "bacon", "imgAddress": "./images meat/bacon.jpg", "id":"crab-sticks"}, {"categoryName": "meat", "itemName": "tortelloni: meat", "imgAddress": "./images meat/tortelloni meat.jpg", "id":"tortelloni-meat"}, {"categoryName": "meat", "itemName": "quiche: meat", "imgAddress": "./images meat/quiche meat.jpg", "id":"quiche-meat"}],
