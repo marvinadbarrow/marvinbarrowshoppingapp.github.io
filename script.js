@@ -840,8 +840,11 @@ $('#shopping-list-items').append(element); // render products to shopping list.
 
 // make each product clickable for deletion consideration
 $('#shopping-list-items').children().click((e) =>{
+  console.log(e.target.parentNode)
+  console.log(e.target)
   $('#shopping-list').hide() // hide shopping list
-  document.getElementById('delete-this-item').append(e.target.parentNode) // appened clicked product to delete modal
+
+  //document.getElementById('delete-this-item').append(e.target.parentNode) // appened clicked product to delete modal
   $('#delete-items').css('display', 'block') // display delete modal
 })
 
