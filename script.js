@@ -492,7 +492,7 @@ array.forEach(element =>{  // load items not purchased
   let productWord = element.match(myRegex) // result assigned a variable. 
   // create div to show rejected items
     let rejectContainer = `<div class="product">
-  <img class="checkout-status-img" src="./cross icon.png">
+  <img class="checkout-status-img" src="./cross_icon.png">
   <p class="checkout-para">${productWord}</p>
   <div class="product-item-count">0</div>
   </div>`
@@ -514,7 +514,7 @@ $('#checkout-container').append(separator) // separates purchases from rejects
 productNamesArr.forEach(element =>{// load purchased items
   console.log(element)
   let productContainer = `<div class="product">
-  <img class="checkout-status-img" src="./tick icon.png">
+  <img class="checkout-status-img" src="./tick_icon.png">
   <p class="checkout-para">${element[0]}</p>
   <div class="product-item-count">${element[1]}</div>
   </div>`
@@ -864,7 +864,7 @@ $('#resume-list').hide()
 
   value.removeChild(value.firstChild)  // remove delete image from each product
   let plusImg = new Image() // create a 'plus' icon for product selection once list is downloaded
-  plusImg.src = "./add to basket.png"
+  plusImg.src = "./add_to_basket.png"
   plusImg.classList.add('plus-icon')
 value.prepend(plusImg)
 verifiedListArr.push(value.outerHTML)}) // push shopping list elements to array
@@ -898,7 +898,7 @@ const pushToShoppingList = (id, destinationID) =>{
  // create a delete icon
  let deleteImg = document.createElement('IMG')
  // add source to delete icon
-     deleteImg.setAttribute('src', 'delete image.png')
+     deleteImg.setAttribute('src', 'delete_image.png')
  
       // style image
     deleteImg.classList.add('delete-image')
@@ -998,7 +998,7 @@ case 'basket-delete':
 
 product.removeChild(product.children[0]) // remove item amount icon
 let plusImg = new Image() // create 'plus' icon item deleted and moved back to download list
-plusImg.src = "./add to basket.png" // assign source
+plusImg.src = "./add_to_basket.png" // assign source
 plusImg.classList.add('plus-icon') // pre-pend into product
 product.prepend(plusImg)
 
