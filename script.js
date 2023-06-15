@@ -841,10 +841,10 @@ $('#shopping-list-items').append(element); // render products to shopping list.
 // make each product clickable for deletion consideration
 $('#shopping-list-items').children().click((e) =>{
   console.log(e.target.parentNode)
-  console.log(e.target)
+  console.log(e)
   $('#shopping-list').hide() // hide shopping list
 
-  //document.getElementById('delete-this-item').append(e.target.parentNode) // appened clicked product to delete modal
+  document.getElementById('delete-this-item').append(e.target.parentNode) // appened clicked product to delete modal
   $('#delete-items').css('display', 'block') // display delete modal
 })
 
@@ -919,7 +919,8 @@ const pushToShoppingList = (id, destinationID) =>{
 
  $('#shopping-list-items').children().click((e) =>{ // make product clickable
   $('#shopping-list').hide() // hide shopping list modal
-$('#hold-modal-content').append(e.target.parentNode) // append clicked product to delete modal
+  console.log(e.target.parentNode)
+$('#delete-this-item').append(e.target.parentNode) // append clicked product to delete modal
   $('#delete-items').css('display', 'block') // show delete modal
  })
 switch(id){ 
